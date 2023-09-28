@@ -43,6 +43,6 @@ def get_name(full_name, perferred_name):
     else:
         perferred_split = perferred_name.split(' ')
         if len(perferred_split) > 1:
-            return perferred_split[0] + ' ' + perferred_split[len(full_split) - 1][0:1] + '.'
+            return perferred_split[0] + ' ' + perferred_split[len(perferred_split) - 1][0:1] + '.'
         else:
             return perferred_split[0] + ' ' + full_split[len(full_split) - 1][0:1] + '.'
