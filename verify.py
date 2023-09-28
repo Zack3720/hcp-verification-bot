@@ -17,7 +17,7 @@ async def run(message):
     verifiedUsers = sheets_api.get_values(SPREADSHEET_ID,'E2:E').get('values')
 
     username = message.author.name
-    if message.author.discriminator is not 0:
+    if message.author.discriminator != 0:
         username = message.author.name + "#" + message.author.discriminator
 
     if [username] in verifiedUsers:
